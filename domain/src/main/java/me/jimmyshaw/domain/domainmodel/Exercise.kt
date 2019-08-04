@@ -1,6 +1,6 @@
 package me.jimmyshaw.domain.domainmodel
 
-import me.jimmyshaw.domain.enums.ExerciseType
+import me.jimmyshaw.domain.constants.ExerciseType
 
 data class Exercise(
     val name: String,

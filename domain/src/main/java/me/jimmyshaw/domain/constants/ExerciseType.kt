@@ -1,4 +1,4 @@
-package me.jimmyshaw.domain.enums
+package me.jimmyshaw.domain.constants
 
 enum class ExerciseType(val type: String) {
     BODYWEIGHT("Bodyweight"),

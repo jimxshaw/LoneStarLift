@@ -1,6 +1,6 @@
 package me.jimmyshaw.domain.domainmodel
 
-import me.jimmyshaw.domain.enums.ExerciseTarget
+import me.jimmyshaw.domain.constants.ExerciseTarget
 
 data class WorkoutTemplate(
     val name: String,

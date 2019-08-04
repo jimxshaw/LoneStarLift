@@ -1,4 +1,4 @@
-package me.jimmyshaw.domain.enums
+package me.jimmyshaw.domain.constants
 
 // Target muscle groups
 enum class ExerciseTarget(val target: String) {
