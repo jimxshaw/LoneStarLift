@@ -1,12 +1,11 @@
 package me.jimmyshaw.domain.domainmodel
 
 import me.jimmyshaw.domain.enums.ExerciseTarget
+import me.jimmyshaw.domain.enums.ExerciseType
 
-data class WorkoutTemplate(
+data class ExerciseTemplate(
     val name: String,
-    val thumbnailRes: String,
-    val description: String,
-    val difficulty: Int,
     val targets: List<ExerciseTarget>,
-    val workout: Workout
+    val isCustom: Boolean,
+    val type: ExerciseType
 )
