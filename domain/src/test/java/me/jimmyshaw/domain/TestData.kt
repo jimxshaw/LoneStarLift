@@ -1,6 +1,5 @@
 package me.jimmyshaw.domain
 
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils.getSet
 import me.jimmyshaw.domain.constants.ExerciseType
 import me.jimmyshaw.domain.domainmodel.Exercise
 import me.jimmyshaw.domain.domainmodel.Workout
@@ -14,7 +13,7 @@ fun getWorkout(
         name,
         createdOn,
         exercises
-    )
+)
 
 fun getExercise(
     name: String = "Barbell Benchpress",
