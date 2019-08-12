@@ -1,4 +1,5 @@
 import io.mockk.coEvery
+import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.test.runBlockingTest
 import me.jimmyshaw.domain.ResultWrapper
@@ -27,6 +28,10 @@ class GetWorkoutsByDatTest {
         val DATERANGE_DAY = DateRange.DAY
 
         coEvery { repo.getWorkoutsByDate(TEST_DATE, DATERANGE_DAY) } returns ResultWrapper.build { TEST_WORKOUTS }
+
+        useCase.execute(TEST_DATE)
+
+        coVerify(exactly = 1) { repo.getWorkoutsByDate(TEST_DATE, DATERANGE_DAY) }
 
 
     }
